@@ -1,0 +1,77 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding-top: $const-padding;
+    @media #{$maxmobile} {
+        // text-align: center;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .info {
+            width: 50%;
+            @media #{$maxmobile} {
+                width: 100%;
+            }
+            .contact {
+                margin-bottom: 20px;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                    background-color: #262a2b;
+                    padding: 5px;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                span {
+                    font-weight: bold;
+                    code {
+                        font-weight: normal;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: var(--main-color);
+                }
+            }
+        }
+        .about {
+            width: 50%;
+            @media #{$maxmobile} {
+                width: 100%;
+                margin-top: 20px;
+            }
+            h4 {
+                margin: 0 0 20px;
+            }
+            p {
+                line-height: 1.8;
+            }
+            .social {
+                i {
+                    font-size: 20px;
+                    background-color: #262a2b;
+                    padding: 5px;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 40px;
+        background-color: #262a2b;
+        padding: 20px;
+    }
+}

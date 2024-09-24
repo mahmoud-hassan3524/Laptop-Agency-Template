@@ -1,0 +1,13 @@
+// widths Of Media Guirey 
+$minsmall: '(min-width: 768px)';
+$minmedium: '(min-width: 992px)';
+$minlarge: '(min-width: 1200px)';
+$maxsmall: '(max-width: 991px)';
+$maxmedium: '(max-width: 1199px)';
+$maxmobile: '(max-width: 767px)';
+
+$const-padding: 50px;
+
+:root {
+	--main-color: #E91E63;
+}

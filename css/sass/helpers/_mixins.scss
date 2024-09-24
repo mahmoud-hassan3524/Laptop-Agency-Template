@@ -1,0 +1,4 @@
+// Mixin For Change Background Color Of Elements
+@mixin changeBackgroundColor($color) {
+    background-color: $color
+}

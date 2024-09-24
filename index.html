@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Special Design</title>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Start Settings -->
+		<div class="settings">
+			<div class="toggle-icon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="content">
+				<div class="options-box">
+					<h4>Colors</h4>
+					<ul>
+						<li class="active" data-color="#E91E63"></li>
+						<li data-color="#03A9F4"></li>
+						<li data-color="#FF5722"></li>
+						<li data-color="#FFC107"></li>
+						<li data-color="#9C27B0"></li>
+					</ul>
+				</div>
+				<div class="options-box">
+					<h4>Change Backgrounds</h4>
+					<div class="buttons">
+						<span class="yes active" data-background="yes">Yes</span>
+						<span class="no" data-background="no">No</span>
+					</div>
+				</div>
+				<div class="options-box">
+					<h4>Bullets Option</h4>
+					<div class="buttons-bullets">
+						<span class="yes active" data-display="yes">Enable</span>
+						<span class="no" data-display="no">Disable</span>
+					</div>
+				</div>
+				<button class="reset-options">Reset Options</button>
+			</div>
+		</div>
+		<!-- End Settings -->
+		<!-- Start Nav Bullets -->
+		<div class="nav-bullets">
+			<div class="bullet" data-section=".about-us">
+				<div class="tooltip">About Us</div>
+			</div>
+			<div class="bullet" data-section=".skills">
+				<div class="tooltip">Our Skills</div></div>
+			<div class="bullet" data-section=".gallery">
+				<div class="tooltip">Our Gallery</div>
+			</div>
+			<div class="bullet" data-section=".timeline">
+				<div class="tooltip">Timeline</div>
+			</div>
+			<div class="bullet" data-section=".features">
+				<div class="tooltip">Our Features</div>
+			</div>
+			<div class="bullet" data-section=".testimonial">
+				<div class="tooltip">Testimonials</div>
+			</div>
+		</div>
+		<!-- End Nav Bullets -->
+		<!-- Start Landing -->
+		<div class="landing">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<a href=""><img src="imgs/logo.jpg" alt="" /></a>
+					</div>
+					<div class="toggle">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+					<ul class="links">
+						<li><a href="" class="active" data-section=".about-us">About</a></li>
+						<li><a href="" data-section=".skills">Skills</a></li>
+						<li><a href="" data-section=".gallery">Gallery</a></li>
+						<li><a href="" data-section=".timeline">Timeline</a></li>
+						<li><a href="" data-section=".features">Features</a></li>
+						<li><a href="" data-section=".testimonial">Testimonials</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="text">
+				<h1>We Are <span>Laptop</span> Agency</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam et
+					minus consequatur repellendus inventore exercitationem
+				</p>
+			</div>
+			<div class="indicators"></div>
+		</div>
+		<!-- End Landing -->
+		<!-- Start About Us -->
+		<div class="container">
+			<div class="about-us">
+				<div class="info">
+					<h2>About Us</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo itaque sunt asperiores perspiciatis corrupti 
+						dolores iure eius a doloremque, cumque excepturi temporibus voluptas tempore neque, sed eos natus ipsam incidunt.
+					</p>
+				</div>
+				<div class="image">
+					<img src="imgs/about-us.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- End About Us -->
+		<!-- Start Our Skills -->
+		<div class="skills">
+			<div class="container">
+				<h2>Our Skills</h2>
+				<div class="content">
+					<div class="skill-box">
+						<h4 class="skill-name">HTML</h4>
+						<div class="skill-progress">
+							<span data-progress="90%"></span>
+						</div>
+					</div>
+					<div class="skill-box">
+						<h4 class="skill-name">CSS</h4>
+						<div class="skill-progress">
+							<span data-progress="70%"></span>
+						</div>
+					</div>
+					<div class="skill-box">
+						<h4 class="skill-name">BootStrap</h4>
+						<div class="skill-progress">
+							<span data-progress="80%"></span>
+						</div>
+					</div>
+					<div class="skill-box">
+						<h4 class="skill-name">JavaScript</h4>
+						<div class="skill-progress">
+							<span data-progress="60%"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Our Skills -->
+		<!-- Start Gallery -->
+		<div class="gallery">
+			<div class="container">
+				<h2>Our Gallery</h2>
+				<div class="images-box">
+					<img src="imgs/landing-1.jpg" alt="Image One">
+					<img src="imgs/landing-2.jpg" alt="Image Two">
+					<img src="imgs/landing-3.jpg" alt="Image Three">
+					<img src="imgs/landing-4.jpg" alt="Image Four">
+					<img src="imgs/landing-5.jpg" alt="Image Five">
+					<img src="imgs/landing-6.jpg" alt="">
+					<img src="imgs/landing-7.jpg" alt="">
+					<img src="imgs/landing-8.jpg" alt="">
+					<img src="imgs/landing-9.jpg" alt="">
+					<img src="imgs/landing-10.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- End Gallery -->
+		<!-- Start Timeline -->
+		<div class="timeline">
+			<div class="container">
+				<div class="timeline-content">
+					<span class="year">2024</span>
+					<div class="left">
+						<div class="content">
+							<h3>Testing Heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit unde saepe voluptatibus, consequatur 
+								quos esse, natus excepturi suscipit, modi sit sequi? Ipsam, enim esse similique dolorem repudiandae 
+								voluptates ex.
+							</p>
+						</div>
+					</div>
+					<div class="right">
+						<div class="content">
+							<h3>Testing Heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit unde saepe voluptatibus, consequatur 
+								quos esse, natus excepturi suscipit, modi sit sequi? Ipsam, enim esse similique dolorem repudiandae 
+								voluptates ex.
+							</p>
+						</div>
+					</div>
+					<div class="right">
+						<div class="content">
+							<h3>Testing Heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit unde saepe voluptatibus, consequatur 
+								quos esse, natus excepturi suscipit, modi sit sequi? Ipsam, enim esse similique dolorem repudiandae 
+								voluptates ex.
+							</p>
+						</div>
+					</div>
+					<span class="year">2019</span>
+					<div class="left">
+						<div class="content">
+							<h3>Testing Heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit unde saepe voluptatibus, consequatur 
+								quos esse, natus excepturi suscipit, modi sit sequi? Ipsam, enim esse similique dolorem repudiandae 
+								voluptates ex.
+							</p>
+						</div>
+					</div>
+					<div class="left">
+						<div class="content">
+							<h3>Testing Heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit unde saepe voluptatibus, consequatur 
+								quos esse, natus excepturi suscipit, modi sit sequi? Ipsam, enim esse similique dolorem repudiandae 
+								voluptates ex.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Timeline -->
+		<!-- Start Our Features -->
+		<div class="features">
+			<h2>Our Features</h2>
+			<div class="container">
+				<div class="feat">
+					<img src="imgs/feat-1.jpg" alt="">
+					<h3>Communications</h3>
+					<p>Pretium lectus quam id leo in vitae turpis. Mattis pellentesque id nibh tortor id.</p>
+					<span class="btn">More</span>
+				</div>
+				<div class="feat">
+					<img src="imgs/feat-2.jpg" alt="">
+					<h3>Inspired Design</h3>
+					<p>Nunc consequat interdum varius sit amet mattis vulputate enim nulla. Risus feugiat.</p>
+					<span class="btn">More</span>
+				</div>
+				<div class="feat">
+					<img src="imgs/feat-3.jpg" alt="">
+					<h3>Happy Customers</h3>
+					<p>Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel elit scelerisque mauris.</p>
+					<span class="btn">More</span>
+				</div>
+				<div class="feat">
+					<img src="imgs/feat-1.jpg" alt="">
+					<h3>Communications</h3>
+					<p>Pretium lectus quam id leo in vitae turpis. Mattis pellentesque id nibh tortor id.</p>
+					<span class="btn">More</span>
+				</div>
+				<div class="feat">
+					<img src="imgs/feat-2.jpg" alt="">
+					<h3>Inspired Design</h3>
+					<p>Nunc consequat interdum varius sit amet mattis vulputate enim nulla. Risus feugiat.</p>
+					<span class="btn">More</span>
+				</div>
+				<div class="feat">
+					<img src="imgs/feat-3.jpg" alt="">
+					<h3>Happy Customers</h3>
+					<p>Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel elit scelerisque mauris.</p>
+					<span class="btn">More</span>
+				</div>
+			</div>
+		</div>
+		<!-- End Our Features -->
+		<!-- Start Testimonials -->
+		<div class="testimonial">
+			<div class="container">
+				<h2>Read what our customers say</h2>
+				<div class="content">
+					<div class="ts-box">
+						<p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. 
+							Ut sem nulla pharetra diam sit amet nisl. Enim nunc faucibus a pellentesque sit amet. Sed turpis tincidunt
+							id aliquet risus feugiat in ante metus.
+						</p>
+						<div class="info">
+							<img src="imgs/customer-1.jpg" alt="">
+							<div class="text">
+								<h4>Celia Almeda</h4>
+								<p>CEO Mailcharm</p>
+							</div>
+						</div>
+					</div>
+					<div class="ts-box">
+						<p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. 
+							Ut sem nulla pharetra diam sit amet nisl. Enim nunc faucibus a pellentesque sit amet. Sed turpis tincidunt
+							id aliquet risus feugiat in ante metus.
+						</p>
+						<div class="info">
+							<img src="imgs/customer-2.jpg" alt="">
+							<div class="text">
+								<h4>Frank Kinney</h4>
+								<p>Financial Director</p>
+							</div>
+						</div>
+					</div>
+					<div class="ts-box">
+						<p>Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. 
+							Ut sem nulla pharetra diam sit amet nisl. Enim nunc faucibus a pellentesque sit amet. Sed turpis tincidunt
+							id aliquet risus feugiat in ante metus.
+						</p>
+						<div class="info">
+							<img src="imgs/customer-3.jpg" alt="">
+							<div class="text">
+								<h4>Phoebe Nelson</h4>
+								<p>Sales Manager</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Testimonials -->
+		<!-- Start Contact Us -->
+		<div class="contact-us">
+			<div class="container">
+				<h2>Contact Us</h2>
+				<div class="contact-info">
+					<div class="box">
+						<input type="text"   placeholder="Your Name">
+						<input type="tel" placeholder="Your Phone">
+						<input type="email"  placeholder="Your Email">
+						<input type="text"   placeholder="Subject">
+					</div>
+					<div class="box">
+						<textarea placeholder="Your Message"></textarea>
+						<input type="submit" value="Send">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Contact Us -->
+		<!-- Start Footer -->
+		<footer>
+			<div class="container">
+				<div class="info">
+					<div class="contact">
+						<i class="fa-solid fa-location-dot"></i>
+						<span><code>21 Revolution Street</code><br> Paris, France</span>
+					</div>
+					<div class="contact">
+						<i class="fa-solid fa-phone"></i>
+						<span>+1 444 123455</span>
+					</div>
+					<div class="contact">
+						<i class="fa-solid fa-envelope"></i>
+						<span><a href="">support@company.com</a></span>
+					</div>
+				</div>
+				<div class="about">
+					<h4>About The Company</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo eaque aspernatur, ut, modi expedita recusandae ad, similique iure nemo harum aperiam eligendi? Vitae accusamus, obcaecati aliquam iste voluptas accusantium!
+					</p>
+					<div class="social">
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-google-plus-g"></i>
+						<i class="fa-brands fa-whatsapp"></i>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">&copy; 2024 Copyright</div>
+		</footer>
+		<!-- End Footer -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

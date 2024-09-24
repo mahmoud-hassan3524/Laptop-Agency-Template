@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Open Sans", system-ui;
+	font-optical-sizing: auto;
+	height: 5000px;
+}
+/* Start Settings */
+.settings {
+	position: fixed;
+	z-index: 1001;
+	background-color: #fff;
+	left: -200px;
+	top: 0;
+	width: 200px;
+	min-height: 100vh;
+	transition: 0.5s;
+	&.open {
+		left: 0;
+	}
+	.toggle-icon {
+		position: absolute;
+		right: -32px;
+		background-color: #fff;
+		top: 200px;
+		cursor: pointer;
+		&:hover {
+			background-color: var(--main-color);
+		}
+		i {
+			padding: 8px;
+		}
+	}
+	.content {
+		.options-box {
+			padding: 15px 10px;
+			margin: 10px;
+			text-align: center;
+			background-color: #cbcbcb;
+			h4 {
+				font-weight: 800;
+				color: #666;
+				margin: 0 0 10px;
+				font-size: 14px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				li {
+					display: inline-block;
+					width: 24px;
+					height: 24px;
+					border-radius: 50%;
+					cursor: pointer;
+					border: 2px solid #cbcbcb;
+					&.active {
+						border-color: #fff;
+					}
+					&:first-child {
+						background-color: #E91E63;
+					}
+					&:nth-child(2) {
+						background-color: #03a9f4;
+					}
+					&:nth-child(3) {
+						background-color: #ff5722;
+					}
+					&:nth-child(4) {
+						background-color: #FFC107;
+					}
+					&:nth-child(5) {
+						background-color: #9c27b0;
+					}
+				}
+			}
+			span {
+				background-color: #673ab7;
+				color: #fff;
+				padding: 5px 10px;
+				width: 70px;
+				display: inline-block;
+				border-radius: 5px;
+				font-size: 14px;
+				cursor: pointer;
+				opacity: .7;
+				&.active {
+					opacity: 1;
+				}
+			}
+		}
+		.reset-options {
+			background-color: #f00;
+			border: none;
+			width: 180px;
+			margin: 10px auto;
+			display: block;
+			padding: 10px;
+			color: #fff;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+	}
+}
+/* End Settings */
+/* Start Nav Bullets */
+.nav-bullets {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	z-index: 1000;
+	.bullet {
+		width: 20px;
+		height: 20px;
+		border: 3px solid var(--main-color);
+		border-radius: 50%;
+		margin: 15px;
+		position: relative;
+		cursor: pointer;
+		&:hover {
+			.tooltip {
+				display: block;
+			}
+		}
+		.tooltip {
+			position: absolute;
+			background-color: var(--main-color);
+			width: 120px;
+			right: 32px;
+			padding: 6px 10px;
+			text-align: center;
+			color: #fff;
+			top: -8px;
+			cursor: default;
+			pointer-events: none;
+			display: none;
+			&::before {
+				content: '';
+				border-style: solid;
+				border-width: 10px;
+				border-color: transparent transparent transparent var(--main-color);
+				position: absolute;
+				right: -20px;
+				top: 50%;
+				transform: translateY(-50%);
+
+			}
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
+/* End Nav Bullets */

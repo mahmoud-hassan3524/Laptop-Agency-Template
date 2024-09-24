@@ -1,0 +1,504 @@
+/* Start Landing */
+.landing {
+	position: relative;
+	background-image: url("../imgs/landing-1.jpg");
+	background-size: cover;
+	min-height: 100vh;
+	max-width: 100%;
+	// .container {
+	// 	position: relative;
+	// 	z-index: 1000;
+	// }
+	.overlay {
+		background-color: rgba(#000, 0.6);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+	}
+	.text {
+		color: #fff;
+		z-index: 1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+		h1 {
+			font-size: 35px;
+			margin-bottom: 12px;
+			@media #{$maxmobile} {
+				font-size: 28px;
+			}  
+			span {
+				color: var(--main-color);
+			}
+		}
+		p {
+			line-height: 1.8;
+			font-size: 18px;
+			margin-top: 0;
+		}
+	}
+	.indicators {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		text-align: center;
+		bottom: 20px;
+		span {
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			border-radius: 50%;
+			background-color: #fff;
+			margin-left: 10px;
+			cursor: pointer;
+			&:hover,
+			&.active {
+				background-color: var(--main-color);
+			}
+		}
+	}
+}
+/* End Landing */
+/* Start About Us */
+.about-us {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: $const-padding;
+	padding-bottom: $const-padding;
+	.info {
+		width: 50%;
+		@media #{$maxmobile} {
+			width: 100%;
+			text-align: center;
+		}
+		h2 {
+			color: var(--main-color);
+			margin: 0 0 10px;
+			font-size: 25px;
+		}
+		p {
+			line-height: 1.8;
+			color: #6e6c6c;
+			margin: 0;
+		}
+	}
+	.image {
+		width: 50%;
+		text-align: center;
+		@media #{$maxmobile} {
+			width: 100%;
+		}
+		img {
+			width: 300px;
+			@media #{$maxmobile} {
+				width: 100%;
+			}
+		}
+		
+	}
+}
+/* End About Us */
+/* Start Our Skills */
+.skills {
+	background-color: #eee ;
+	padding-top: $const-padding;
+	padding-bottom: $const-padding;
+	h2 {
+		color: var(--main-color);
+		font-size: 25px;
+		text-align: center;
+		margin: 0;
+	}
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.skill-box{
+			margin-top: 50px;
+			width: 45%;
+			@media #{$maxmobile} {
+				width: 100%;
+			}
+			.skill-name {
+				margin: 0 0 10px;
+			}
+			.skill-progress {
+				background-color: #fff;
+				height: 15px;
+				width: 100%;
+				border-radius: 6px;
+				overflow: hidden;
+				span {
+					background-color: var(--main-color);
+					height: 100%;
+					display: inline-block;
+					width: 0;
+					transition: all 1.5s;
+				}
+			}
+		}
+	}
+}
+/* End Our Skills */
+/* Start Gallery */
+.gallery {
+	padding-top: $const-padding;
+	padding-bottom: $const-padding;
+	h2 {
+		color: var(--main-color);
+		font-size: 25px;
+		text-align: center;
+		margin: 0 0 50px;
+
+	}
+	.images-box {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		img {
+			width: ((100% - 10) / 5);
+			margin: 5px;
+			padding: 3px;
+			background-color: #f6f6f6;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			@media #{$maxmobile} {
+				width: ((100% - 10) / 2);
+			}
+			@media #{$minsmall} and #{$maxsmall}  {
+				width: ((100% - 10) / 3);
+			}
+		}
+	}
+}
+// The Popup With Image
+.popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(#000, 0.7);
+	z-index: 1001;
+}
+.popup-box {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	z-index: 1001;
+	h3 {
+		text-align: center;
+		color: var(--main-color);
+		margin: 0 0 20px;
+	}
+	img {
+		max-width: 100%;
+	}
+	.close {
+		position: fixed;
+		right: -20px;
+		top: -20px;
+		background-color: var(--main-color);
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 50%;
+		font-weight: bold;
+		font-family:  Tahoma, sans-serif;
+		color: #fff;
+		font-size: 20px;
+		cursor: pointer;
+	}
+}
+/* End Gallery */
+/* Start Timeline */
+.timeline {
+	background-color: #eee;
+	padding-top: $const-padding;
+	padding-bottom: $const-padding;
+	.timeline-content {
+		position: relative;
+		overflow: hidden;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 100%;
+			background-color: var(--main-color);
+			left: 50%;
+			transform: translateX(-50%);
+			top: 0;
+		}
+		.year {
+			margin: 20px auto;
+			width: 60px;
+			position: relative;
+			background-color: var(--main-color);
+			z-index: 2;
+			padding: 2px 5px;
+			color: #fff;
+			display: block;
+			text-align: center;
+			border-radius: 4px;
+			font-weight: bold;
+		}
+		.left,
+		.right {
+			position: relative;
+			@media #{$minsmall} {
+				&::before {
+					content: "";
+					width: 14px;
+					height: 14px;
+					position: absolute;
+					border-radius: 50%;
+					border: 3px solid var(--main-color);
+					background-color: #fff;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 20px;
+				}
+				&::after{
+					content: '';
+					border-style: solid;
+					border-width: 10px;
+					position: absolute;
+					top: 20px;
+				}
+			}
+		}
+		.left {
+			&::after {
+				left: calc(50% - 30px);
+				border-color: transparent transparent transparent #fff;
+			}
+		}
+		.right {
+			display: flex;
+			justify-content: end;
+			&::after {
+				border-color: transparent #fff transparent transparent;
+				right: calc(50% - 30px);
+			}
+		}
+		.content {
+			position: relative;
+			background-color: #fff;
+			padding: 20px;
+			width: calc(50% - 30px);
+			margin-bottom: 40px;
+			@media #{$maxmobile} {
+				width: 100%;
+			}
+			h3 {
+				color: var(--main-color);
+				font-weight: bold;
+				margin: 0 0 10px;
+			}
+			p {
+				line-height: 1.6;
+				color: #6e6c6c;
+				margin: 0;
+			}
+		}
+	}
+}
+/* End Timeline */
+/* Start Our Features */
+.features {
+	background-color: #C8E8E0;
+	padding-top: $const-padding;
+	padding-bottom: $const-padding;
+	h2 {
+		color: var(--main-color);
+		font-size: 25px;
+		text-align: center;
+		margin: 0 0 50px;
+	}
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px;
+		.feat {
+			width: calc((100% - 60px) / 3);
+			background-color: #fff;
+			text-align: center;
+			padding: 20px;
+			border-radius: 25px;
+			@media #{$maxmobile} {
+				width: 100%;
+			}
+			@media #{$minsmall} and #{$maxsmall}  {
+				width: calc((100% - 60px) / 2);
+			}
+			img {
+				max-width: 220px;
+			}
+			h3 {
+				color: var(--main-color);
+				font-size: 22px;
+			}
+			p {
+				line-height: 2;
+				color: #6e6c6c;
+				font-size: 17px;
+			}
+			.btn {
+				background-color: var(--main-color);
+				width: 120px;
+				display: inline-block;
+				color: #fff;
+				padding: 10px 0;
+				text-transform: uppercase;
+				text-align: center;
+				border-radius: 60px;
+				margin: 7px 0 22px;
+				cursor: pointer;
+			}
+		}
+	} 
+}
+/* End Our Features */
+/* Start Testimonials */
+.testimonial {
+	padding-top: ($const-padding + 20px);
+	padding-bottom: ($const-padding + 20px);
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: var(--main-color);
+		z-index: -1;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		right: 0;
+		top: 0;
+		background-color: #333;
+		z-index: -1;
+	}
+	h2 {
+		color:#fff;
+		font-size: 23px;
+		margin: 0 0 20px;
+	}
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1%;
+		.ts-box {
+			background-color: #fff;
+			padding: 20px;
+			margin-bottom: 20px;
+			width: 100%;
+			@media #{$minsmall} {
+				width: (98%/ 2);
+			}
+			@media #{$minmedium} {
+				width: (98% / 3);
+			}
+			& > p {
+				line-height: 1.6;
+				color: #6e6c6c;
+				font-size: 17px;
+				margin: 0 0 15px;
+				font-style: italic;
+			}
+			.info {
+				@media #{$minsmall} {
+					display: flex;
+					align-items: center;
+					gap: 18px;
+				}
+				img {
+					width: 80px;
+					height: 80px;
+					border-radius: 50%;
+				}
+				.text {
+					h4 {
+						margin: 0 0 8px;
+						font-size: 18px;
+						@media #{$maxmobile} {
+							margin: 10px 0;
+						}
+					}
+					p {
+						color: #6e6c6c;
+						font-size: 14px;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+/* End Testimonials */
+/* Start Contact Us */
+.contact-us {
+	padding-top: ($const-padding + 20px);
+	padding-bottom: ($const-padding + 20px) ;
+	h2 {
+		color: var(--main-color);
+		font-size: 28px;
+		text-align: center;
+		margin: 0 0 35px;
+	}
+	.contact-info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 2%;
+		max-width: 800px;
+		margin: auto;
+		.box {
+			width: (98% / 2);
+			margin-top: 15px;
+			@media #{$maxmobile} {
+				width: 100%;
+			}
+			input,
+			textarea {
+				display: block;
+				width: 100%;
+				padding: 8px 10px;
+				border: 1px solid #a3a3a3; 
+				outline: none;
+				background-color: #f0f0f0;
+				height: 40px;
+				&:not(:first-child) {
+					margin-top: 15px;
+				}
+			}
+			input[type="submit"] {
+				background-color: var(--main-color);
+				border-color: var(--main-color);
+				color: #fff;
+				cursor: pointer;
+			}
+			textarea {
+				height: 150px;
+			}
+		}
+	}
+}
+/* End contact Us */
